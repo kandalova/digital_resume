@@ -219,7 +219,7 @@ nav{
 
 .block-switch--header:after{
 	content: '╳';
-	font-size: 0.9em;
+	font-size: 1em;
 	float: right;
 	margin-left: 5px;
 	transform: rotate(45deg);

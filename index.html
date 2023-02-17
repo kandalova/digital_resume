@@ -8,7 +8,7 @@
 	<link rel='stylesheet' type='text/css' media='screen' href='./styles/main.css'>
 	<link rel='stylesheet' type='text/css' media='screen' href='./styles/slider.css'>
 	<script defer src="./scripts/theme-switch.js"></script>
-	<script defer src="./scripts/main.js"></script>
+	<script type="module" deffer src="/scripts/main.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 <body>
@@ -147,17 +147,10 @@
 
 			<div class="line-break"></div>
 
-			<div data-include="collapsedProject"></div>
-
+			<!-- <div data-include="collapsedProject"></div> -->
 			<div class="card--work-history">
-				<strong>SOFTWARE ENGINEER | EPAM</strong>
-				<p>11-2021 - Present</p>
-				<p>Worked on "PROJECT"</p>
-				<ul>
-					<li>Doubled</li>
-					<li>Produced</li>
-					<li>Produced</li>
-				</ul>
+				<collapsed-block id="1"></collapsed-block>
+				<collapsed-block id="2"></collapsed-block>
 			</div>
 
 		</section>
