@@ -8,7 +8,8 @@
 	<link rel='stylesheet' type='text/css' media='screen' href='./styles/main.css'>
 	<link rel='stylesheet' type='text/css' media='screen' href='./styles/slider.css'>
 	<script defer src="./scripts/theme-switch.js"></script>
-
+	<script defer src="./scripts/main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 <body>
 	<nav>
@@ -26,8 +27,8 @@
 			<img id="profile--pic" src="./assets/images/profile_pic.jpg"/>
 			<div>
 				<h1 id="username">Leyla Kandalova</h1>
-				<p id="bio">Software Engeneer</p>
-				<p>	&#x1F449; kandallova@gmail.com</p>
+				<p id="bio">Software engineer on the frontend side with a commercial background and a strong foundation in IT and Math education.</p>
+				<p>	&#x1F449; <a id="email" target="_blank" rel="noopener noreferrer" href="mailto:kandallova@gmail.com">kandallova@gmail.com</a></p>
 			</div>
 		</section>
 
@@ -41,9 +42,16 @@
 		<section class="section--page">
 			<h2>Skills and Qualifications</h2>
 			<ul id="skills--list">
-				<li>&#x2705; 3 years experiance with front development</li>
-				<li>&#x2705; 3 years experiance with front development</li>
-				<li>&#x2705; 3 years experiance with front development</li>
+				<li>&#x2705; JavaScript developer with 3 years of experience in Web development</li>
+				<li>&#x2705; Experienced in building large-scale web applications and systems that meet business requirements and user needs</li>
+				<li>&#x2705; Skilled in analyzing and optimizing software performance</li>
+				<li>&#x2705; Identifying and fixing bugs</li>
+				<li>&#x2705; Implementing best practices for code maintainability and readability</li>
+				<li>&#x2705; Created responsive and user-friendly web designs</li> 
+				<li>&#x2705; Implemented unit tests to ensure high code quality</li> 
+				<li>&#x2705; Experienced in Scrum methodologies</li> 
+				<li>&#x2705; Worked collaboratively with cross-functional teams in multicultural environments</li> 
+				<li>&#x2705; Fluent in English at a B1+ level</li>
 			</ul>
 		</section>
 
@@ -51,10 +59,52 @@
 			<h2>Tech Stack</h2>
 			<div id="wrapper--techstack__items">
 				<div class="card--techstack">
-					<span>JavaScript</span>
+					<span>JavaScript, HTML, CSS</span>
 				</div>
 				<div class="card--techstack">
-					<span>JavaScript</span>
+					<span>SAPUI5, SAP Fiori</span>
+				</div>
+				<div class="card--techstack">
+					<span>Vue, Nuxt, Vuex</span>
+				</div>
+				<div class="card--techstack">
+					<span>React, Router, Redux, Next</span>
+				</div>
+				<div class="card--techstack">
+					<span>Typescript</span>
+				</div>
+				<div class="card--techstack">
+					<span>Node.js</span>
+				</div>
+				<div class="card--techstack">
+					<span>OData</span>
+				</div>
+				<div class="card--techstack">
+					<span>XML</span>
+				</div>
+				<div class="card--techstack">
+					<span>jQuery, AJAX, RESTful APIs</span>
+				</div>
+				<div class="card--techstack">
+					<span>GitHub, Gitlab, Bitbuket</span>
+				</div>
+				<div class="card--techstack">
+					<span>Jira</span>
+				</div>
+				<div class="card--techstack">
+					<span>Tailwind</span>
+				</div>
+				<div class="card--techstack">
+					<span>MS Windows, Linux</span>
+				</div>
+				<div class="card--techstack">
+					<span>NPM, YARN</span>
+				</div>
+				<div class="card--techstack">
+					<span>VS Code, WebShtorm</span>
+				</div>
+				<div class="card--techstack">
+					<span>Scrum, Kanban</span>
 				</div>
 			</div>
 		</section>
@@ -65,16 +115,40 @@
 			<div class="line-break"></div>
 			<div class="card--work-history">
 				<strong>SOFTWARE ENGINEER | EPAM</strong>
-				<p>11-2021 - Present</p>
-				<p>Worked on "PROJECT"</p>
-				<ul>
-					<li>Doubled</li>
-					<li>Produced</li>
-					<li>Produced</li>
-				</ul>
+
+				<div class="block-switch-wrapper">
+					<div class="block-switch--header">
+						<p>Project</p>
+					</div>
+					<div class="block-switch--body">
+						<p>Worked on "PROJECT"</p>
+						<ul>
+							<li>Doubled</li>
+							<li>Produced</li>
+							<li>Produced</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="block-switch-wrapper">
+					<div class="block-switch--header">
+						<p>Project</p>
+					</div>
+					<div class="block-switch--body">
+						<p>Worked on "PROJECT"</p>
+						<ul>
+							<li>Doubled</li>
+							<li>Produced</li>
+							<li>Produced</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 
 			<div class="line-break"></div>
+
+			<div data-include="collapsedProject"></div>
+
 			<div class="card--work-history">
 				<strong>SOFTWARE ENGINEER | EPAM</strong>
 				<p>11-2021 - Present</p>
@@ -85,6 +159,7 @@
 					<li>Produced</li>
 				</ul>
 			</div>
+
 		</section>
 
 		<section class="section--page">

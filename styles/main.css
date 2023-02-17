@@ -7,18 +7,21 @@
 	--mainLinkColor-light:#0da2b8;
 	--mainBorderColor-light:rgb(218, 218, 218);
 	--mainBgColor-light:rgb(249, 250,251);
+	--mainWarnColor-light: #f34a4ab5;
 
 	--mainTextColor-dark:#fff;
-	--secondaryTextColor-dark:#adb0b1;
+	--secondaryTextColor-dark:#c3c5c6;
 	--mainLinkColor-dark:rgb(30, 190,214);
 	--mainBorderColor-dark:#2b3031;
 	--mainBgColor-dark:#131415;
+	--mainWarnColor-dark: #ffb700;
 	
 	--mainTextColor:var(--mainTextColor-dark);
   --secondaryTextColor:var(--secondaryTextColor-dark);
   --mainLinkColor:var(--mainLinkColor-dark);
   --mainBorderColor:var(--mainBorderColor-dark);
   --mainBgColor:var(--mainBgColor-dark);
+  --mainWarnColor:var(--mainWarnColor-dark);
 }
 
 [data-theme="dark"]{
@@ -27,6 +30,7 @@
 	--mainLinkColor: var(--mainLinkColor-dark);
 	--mainBorderColor:var(--mainBorderColor-dark);
 	--mainBgColor:var(--mainBgColor-dark);
+	--mainWarnColor:var(--mainWarnColor-dark);
 }
 
 [data-theme="light"]{
@@ -35,6 +39,7 @@
 	--mainLinkColor: var(--mainLinkColor-light);
 	--mainBorderColor:var(--mainBorderColor-light);
 	--mainBgColor:var(--mainBgColor-light);
+	--mainWarnColor:var(--mainWarnColor-light);
 }
 
 *{
@@ -103,7 +108,12 @@ li{
 
 #email{
 	color: var(--mainTextColor);
-	font-weight: 500;
+	font-weight: 400;
+	transition: 0.3s;
+}
+
+#email:hover{
+	color: var(--mainLinkColor);
 }
 
 #socials--links{
@@ -187,4 +197,47 @@ nav{
 		border-left: none;
 		padding-left: 0;
 	}
+}
+
+.block-switch-wrapper{
+	border: 1px solid var(--mainBorderColor);
+	margin: 1em 0;
+}
+
+.block-switch--header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	transition: 0.3s;
+	padding: 0 1em;
+}
+
+.block-switch--header:hover{
+	background-color: var(--mainBorderColor);
+}
+
+.block-switch--header:after{
+	content: '╳';
+	font-size: 0.9em;
+	float: right;
+	margin-left: 5px;
+	transform: rotate(45deg);
+	transition: 0.3s;
+	color: var(--mainWarnColor);
+}
+
+.active:after{
+	transform: rotate(0deg);
+}
+
+.active{
+	background-color: var(--mainBorderColor);
+}
+
+.block-switch--body{
+	padding: 0 18px;
+	max-height: 0;
+	overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
