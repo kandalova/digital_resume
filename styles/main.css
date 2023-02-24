@@ -266,6 +266,10 @@ nav{
 		height: 200px;
 	}
 
+	#socials--links a{
+		color: var(--mainLinkColor);
+	}
+
 	.card--work-history{
 		border-left: none;
 		padding-left: 0;
