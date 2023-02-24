@@ -4,14 +4,16 @@
 :root{
 	--mainTextColor-light:#000;
 	--secondaryTextColor-light:rgb(51 51 51);
+	/* --mainLinkColor-light:#ea8006b5; */
 	--mainLinkColor-light:#0da2b8;
 	--mainBorderColor-light:rgb(218, 218, 218);
 	--mainBgColor-light:rgb(249, 250,251);
-	--mainWarnColor-light: #f34a4ab5;
+	--mainWarnColor-light: #0da2b8;
 
 	--mainTextColor-dark:#fff;
 	--secondaryTextColor-dark:#c3c5c6;
-	--mainLinkColor-dark:rgb(30, 190,214);
+	--mainLinkColor-dark:#ffb700;
+	/* --mainLinkColor-dark:rgb(30, 190,214); */
 	--mainBorderColor-dark:#2b3031;
 	--mainBgColor-dark:#131415;
 	--mainWarnColor-dark: #ffb700;
@@ -67,6 +69,13 @@ a{
 	color: var(--mainLinkColor);
 	font-weight: 500;
 	font-size: 1.6rem;
+}
+
+strong a{
+	text-decoration: none;
+	color: var(--mainWarnColor);
+	font-weight: 500;
+	font-size: inherit;
 }
 
 li{
@@ -156,6 +165,9 @@ li{
 	margin-bottom: 3em;
 	padding-left: 2em;
 }
+.card--work-history strong{
+	color: var(--secondaryTextColor);
+}
 
 .line-break{
 	background-color: var(--mainBorderColor);
@@ -213,6 +225,10 @@ nav{
 	padding: 0 1em;
 }
 
+.block-switch--header p{
+	color: var(--mainTextColor);
+}
+
 .block-switch--header:hover{
 	background-color: var(--mainBorderColor);
 }
@@ -240,4 +256,13 @@ nav{
 	max-height: 0;
 	overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+.block-switch--body p{
+	color: var(--mainTextColor);
+}
+
+.block-switch--body .p--small{
+	font-size: 1.4rem;
+	font-weight: 600;
 }
