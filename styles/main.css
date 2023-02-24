@@ -169,6 +169,11 @@ li{
 	color: var(--secondaryTextColor);
 }
 
+.card--work-history.edu span{
+	color: var(--mainTextColor);
+	font-weight: 500;
+}
+
 .line-break{
 	background-color: var(--mainBorderColor);
 	height: 1px;
@@ -192,23 +197,6 @@ nav{
 
 .card--project a:hover{
 	color: var(--mainLinkColor);
-}
-
-@media (max-width: 600px){
-	#wrapper--hero{
-		flex-direction: column;
-		gap: 1em;
-	}
-
-	#profile--pic{
-		width: 200px;
-		height: 200px;
-	}
-
-	.card--work-history{
-		border-left: none;
-		padding-left: 0;
-	}
 }
 
 .block-switch-wrapper{
@@ -265,4 +253,21 @@ nav{
 .block-switch--body .p--small{
 	font-size: 1.4rem;
 	font-weight: 600;
+}
+
+@media (max-width: 600px){
+	#wrapper--hero{
+		flex-direction: column;
+		gap: 1em;
+	}
+
+	#profile--pic{
+		width: 200px;
+		height: 200px;
+	}
+
+	.card--work-history{
+		border-left: none;
+		padding-left: 0;
+	}
 }
