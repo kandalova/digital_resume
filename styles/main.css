@@ -222,17 +222,17 @@ nav{
 }
 
 .block-switch--header:after{
-	content: '╳';
+	content: '▼';
 	font-size: 1em;
 	float: right;
 	margin-left: 5px;
-	transform: rotate(45deg);
+	transform: rotate(0deg);
 	transition: 0.3s;
 	color: var(--mainWarnColor);
 }
 
 .active:after{
-	transform: rotate(0deg);
+	transform: rotate(180deg);
 }
 
 .active{
